@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+@media (min-width: 320px) {
+    article {
+      padding: 1rem 3rem;
+    } 
+    a{
+        color: #373737;
+        text-decoration: none;
+    }
+    .navbar{
+        min-height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 24px;
+    }
+    .nav-menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 83px;
+    }
+    .nav-link{
+        transition: 0.7s ease;
+    }
+    .nav-link:hover{
+        color: rgb(49, 5, 88);
+    }
+    .hamburger{
+        display: none;
+        cursor: pointer;
+    }
+    .bar{
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: #373737;
+    }  
+  }
+.hamburger{
+    display: block;
+}
+.hamburger.active.bar:nth-child(2){
+    opacity:0;
+}
+.hamburger.active.bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active.bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+.nav-menu{
+    position: fixed;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+}
+.nav-items{
+    margin: 28px 0;
+}
+.nav-menu.active{
+    left: 0;
+}
+body{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    font-family: 'Prompt';
+}
+main{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+#section1{
+    display: flex;
+    flex-direction: column;
+}
+#firstsect{
+    display: flex;
+    flex-direction: column;
+}
+#column{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    position: relative;
+    align-self: center;
+    margin-left: 195px;
+}
+p{
+    font-size: 14px;
+}
+h2{
+    font-size: 20px;
+}
+#lastp{
+    font-size: 11px;
+}
+#front{
+    border-radius: 10px;
+    width: 153px;
+    height: 240px; 
+    overflow: hidden;
+    object-fit: cover;
+    position: absolute;
+    margin-left: -40px;
+}
+footer {
+    position: relative;
+    bottom: -2702px;
+}
+#rectangle{
+    width: 300px;
+    height: 725px;
+    background: #E7E7E8;
+    border-radius: 30px;
+    position: absolute;
+    z-index: -1;
+    align-self: center;
+    margin-top: 28px;
+}
+#gameplay{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 25px;
+    margin-bottom: 120px;
+    margin-top: 20px;
+}
+#mainchara{
+    display: flex;
+    flex-direction: column;
+    margin-top: 55px;
+}
+#perso1{
+    border-radius: 20px;
+}
+#perso2{
+    border-radius: 20px;
+}
+#imagep{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 15px;
+}
+#allnetf{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 225px;
+}
+#threecolumn{
+    margin-top: 48px;
+}
+#netflix{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#characters{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 23px;
+    text-align: right;
+    margin-top: 56px;
+}
+#centrer{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+#allbosses{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+#serie{
+    border-radius: 20px;
+    width: 180px;
+    height: 146px;
+    overflow: hidden;
+    object-fit: cover;
+    margin-top: 10px;
+}
+#reshow{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    margin-top: 10px;
+}
+#buttonsee{
+    border: 1px solid;
+    border-radius: 7px;
+    width: 175px;
+    height: 30px;
+    background-color: #E8E8E8;
+    border-color: #E8E8E8;
+    color: #373737;
+    font-weight: 450;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    margin-top: 30px;
+}
+#rebosses{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#bosses{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    margin-top: 10px;
+}
+#allvil{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+#revillage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#re8{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    margin-top: 10px;
+}
+#carre{
+    width: 300px;
+    height: 506px;
+    background: #E7E7E8;
+    position: absolute;
+    z-index: -1;
+    align-self: center;
+    margin-top: -22px;
+    margin-left: -150px;
+}
+#onvillage{
+    width: 280px;
+    height: 200px;
+    object-fit: cover;
+}
+#watch{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #FDFDFD;
+    padding: 15px;
+    background-image: url('resident-evil-village-trailer-desarrolladores3-1.png');
+    background-size: cover;
+    background-position: center;
+    width: 240px;
+    height: 220px;
+}
+#remake{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #FDFDFD;
+    padding: 15px;
+    background-image: url('resident-evil-4-remake-pc-ps5-xbox-x-s-c3de4ffd.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 240px;
+    height: 220px;
+}
+#last2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+#text1{
+    margin-top: 50px;
+}
+#text2{
+    margin-top: 50px;
+    text-align: right;
+}
+#textnetf{
+    display: grid;
+    grid-template-columns: 300px 0px;
+    grid-template-rows: 119px;
+    align-self: center;
+    margin-top: 10px;
+}
+#textboss{
+    display: grid;
+    grid-template-columns: 300px 0px;
+    grid-template-rows: 82px;
+    align-self: center;
+    margin-top: 10px;
+}
+#textvillage{
+    display: grid;
+    grid-template-columns: 300px 0px;
+    grid-template-rows: 101px;
+    align-self: center;
+    margin-top: 10px;
+}
+#textchara{
+    display: grid;
+    grid-template-columns: 220px 0px;
+    grid-template-rows: 119px;
+    align-self: center;
+    margin-top: 10px;
+}
+#textgameplay{
+    display: grid;
+    grid-template-columns: 225px 0px;
+    grid-template-rows: 119px;
+    align-self: center;
+    margin-top: 10px;
+}
+#centrergame{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+#centrerfront{
+    display: flex;
+    align-self: center;
+    margin-right: 300px;
+}
+#centerheader{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#centerlogo{
+    align-self: center;
+    display: flex;
+    margin-right: 175px;
+}
+#centerfooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px
+}
+#centerfootlogo{
+    align-self: center;
+    display: flex;
+}
+#centercopyright{
+    align-self: center;
+    display: flex;
+}
+#centericons{
+    align-self: center;
+    display: flex;
+    gap: 25px;
+}
